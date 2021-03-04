@@ -1,12 +1,22 @@
 @import "~bootstrap/scss/bootstrap.scss";
-
-.container {
+#right{
+    float:right;
+    margin-bottom: 6px;
+}
+body {
     background-color: rgb(54, 52, 52);
-   
+  
+}
+
+.cartita {
+    border-color: black;
+    margin-left: 10%;
+     width: 400px;
+     background-color: white;
 }
 .card{
-    background-color: white;
-    height: 2500px;
+    background-color: rgba(255, 255, 255, 0.904);
+    height: 500px;
     width:  500px;
     margin: auto;
 }
@@ -16,11 +26,32 @@
 }
 
 h1{
-    text-align: center;;
+    text-align: center;
+    color: gray;
+    font-size: 65px;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+input{
+      padding-left:40px;
+     border: none;
+    
+} 
+li{
+    padding-top: 10px;
+    list-style: none;
+    color: gray;
+    border-top: 1px solid rgb(199, 199, 199);
+    border-bottom: 1px solid rgb(199, 199, 199);
+
+
 }
 
-.cartita {
-    border: black;
-    
-     width:  300px;
+p{
+    border: gray;
+    padding-top: 10px;
+    margin-left: 5px;
+    list-style: none;
+    color: gray;
+    font-size: 10px;
+     border-top: 1px solid rgb(199, 199, 199);
 }
