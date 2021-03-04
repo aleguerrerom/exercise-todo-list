@@ -24,7 +24,7 @@ export function Home() {
 			<div>
 				<ul>
 					{addtoArray.map(item => (
-						<li key={item}>
+						<li className="lista" key={item}>
 							{item}
 							<button onClick={() => removeTodo(item)}>
 								<i className="fas fa-trash-alt"></i>
@@ -38,15 +38,19 @@ export function Home() {
 	};
 
 	return (
-		<div>
-			<h1>TODOS</h1>
-			<input
-				type="text"
-				placeholder="What do you need?"
-				value={inputValue}
-				onChange={e => fnInputValue(e.target.value)}
-				onKeyUp={addTodo}></input>
-			<TodoList />
+		<div className="container">
+			<div className="card">
+				<h1>todos</h1>
+				<div className="cartita">
+					<input
+						type="text"
+						placeholder="What do you need?"
+						value={inputValue}
+						onChange={e => fnInputValue(e.target.value)}
+						onKeyUp={addTodo}></input>
+					<TodoList />
+				</div>
+			</div>
 		</div>
 	);
 }
